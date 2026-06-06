@@ -103,12 +103,7 @@ function getJobsForTab(tab) {
   return jobs.filter((job) => job.status === tab);
 }
 
-function updateDashboard() {
-  const counts = getStatusCounts();
-  dashboardAll.textContent = counts.all;
-  dashboardInterview.textContent = counts.interview;
-  dashboardRejected.textContent = counts.rejected;
-}
+
 
 function renderTabCount(tab) {
   const jobsForTab = getJobsForTab(tab);
